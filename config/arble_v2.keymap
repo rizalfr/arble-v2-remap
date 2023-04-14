@@ -16,41 +16,41 @@
 
         default_layer {
             bindings = <
-    &kp HOME     &gresc     &kp N1  &kp N2       &kp N3    &kp N4     &kp N5  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0  &kp MINUS  &kp EQUAL  &kp BSLH  &kp GRAVE
- &kp PAGE_UP    &kp TAB      &kp Q   &kp W        &kp E     &kp R      &kp T   &kp Y   &kp U      &kp I    &kp O     &kp P   &kp LBKT   &kp RBKT  &kp BSPC
-   &kp PG_DN   &kp CAPS      &kp A   &kp S        &kp D     &kp F      &kp G   &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT    &kp RET
-   &kp LSHFT      &kp Z      &kp X   &kp C        &kp V     &kp B      &kp B   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT      &mo 2
-    &kp LGUI  &kp LCTRL  &kp SPACE   &mo 1  &lt 1 SPACE  &kp RALT  &kp RCTRL
+   &kp HOME     &gresc     &kp N1  &kp N2     &kp N3    &kp N4     &kp N5  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp BACKSPACE
+&kp PAGE_UP    &kp TAB      &kp Q   &kp W      &kp E     &kp R      &kp T   &kp Y   &kp U      &kp I    &kp O     &kp P   &kp LBKT   &kp RBKT  &kp BACKSLASH
+  &kp PG_DN   &kp CAPS      &kp A   &kp S      &kp D     &kp F      &kp G   &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT    &kp RET
+  &kp LSHFT      &kp Z      &kp X   &kp C      &kp V     &kp B      &kp B   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT      &mo 2
+   &kp LGUI  &kp LCTRL  &kp SPACE   &mo 1  &kp SPACE  &kp RALT  &kp RCTRL
             >;
         };
 
         ARROW {
             bindings = <
- &bt BT_SEL 0    &kp F1    &kp F2    &kp F3     &kp F4  &kp F5  &kp F6    &kp F7    &kp F8  &kp F9    &kp F10  &kp F11  &kp F12           &trans  &trans  &trans
- &bt BT_SEL 1  &kp CAPS    &trans    &kp UP     &trans  &trans  &trans    &trans    &trans  &trans     &trans   &trans   &trans           &trans  &trans
- &bt BT_SEL 2    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &trans   &trans  &rgb_ug RGB_TOG
-       &trans    &trans    &trans    &trans     &trans  &trans  &trans    &trans    &trans  &trans     &trans   &trans   &trans           &trans
-       &trans    &trans    &trans    &trans     &trans  &trans  &trans
+&bt BT_SEL 0    &kp F1    &kp F2    &kp F3     &kp F4  &kp F5  &kp F6    &kp F7    &kp F8  &kp F9    &kp F10  &kp F11  &kp F12           &trans  &trans  &trans
+&bt BT_SEL 1  &kp CAPS    &trans    &kp UP     &trans  &trans  &trans    &trans    &trans  &trans     &trans   &trans   &trans           &trans  &trans
+&bt BT_SEL 2    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &trans   &trans  &rgb_ug RGB_TOG
+      &trans    &trans    &trans    &trans     &trans  &trans  &trans    &trans    &trans  &trans     &trans   &trans   &trans           &trans
+      &trans    &trans    &trans    &trans     &trans  &trans  &trans
             >;
         };
 
         reset_boot {
             bindings = <
- &bt BT_SEL 0       &reset  &trans      &trans  &trans        &trans        &trans  &trans        &trans  &trans  &trans    &trans     &trans           &trans  &trans  &trans
- &bt BT_SEL 1  &bootloader  &trans      &trans  &trans        &trans  &out OUT_TOG  &trans  &out OUT_USB  &trans  &trans    &trans     &kp UP           &trans  &tog 3
- &bt BT_SEL 2       &trans  &trans      &trans  &trans        &trans        &trans  &trans        &trans  &trans  &trans  &kp LEFT  &kp RIGHT  &rgb_ug RGB_TOG
-       &trans       &trans  &trans  &bt BT_CLR  &trans  &out OUT_BLE        &trans  &trans        &trans  &trans  &trans  &kp DOWN     &trans           &trans
-       &trans       &trans  &trans      &trans  &trans        &trans        &trans
+&bt BT_SEL 0       &reset  &trans      &trans  &trans        &trans        &trans  &trans        &trans  &trans  &trans    &trans     &trans           &trans  &trans  &trans
+&bt BT_SEL 1  &bootloader  &trans      &trans  &trans        &trans  &out OUT_TOG  &trans  &out OUT_USB  &trans  &trans    &trans     &kp UP           &trans  &tog 3
+&bt BT_SEL 2       &trans  &trans      &trans  &trans        &trans        &trans  &trans        &trans  &trans  &trans  &kp LEFT  &kp RIGHT  &rgb_ug RGB_TOG
+      &trans       &trans  &trans  &bt BT_CLR  &trans  &out OUT_BLE        &trans  &trans        &trans  &trans  &trans  &kp DOWN     &trans           &trans
+      &trans       &trans  &trans      &trans  &trans        &trans        &trans
             >;
         };
 
         lock_layer {
             bindings = <
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none  &trans
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none  &trans
-  &none   &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans
+&none  &none  &none  &none  &none  &none  &none
             >;
         };
     };
