@@ -1,11 +1,13 @@
 manifest:
   remotes:
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: rizalfr
+      url-base: https://github.com/rizalfr
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: core/zephyr-v3.0.0-update
+      remote: rizalfr
+      revision: core/zephyr-v3
       import: app/west.yml
   self:
     path: config
